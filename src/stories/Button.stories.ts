@@ -42,7 +42,6 @@ export const Large: Story = {
     size: "large",
     label: "Button",
   },
-  tags: ["b"],
 };
 
 export const Small: Story = {
@@ -50,5 +49,5 @@ export const Small: Story = {
     size: "small",
     label: "Button",
   },
-  tags: ["b"],
+  tags: ["dev-only"],
 };
