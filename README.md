@@ -16,7 +16,7 @@ It also contains a toolbar button with a "filter" icon that toggles stories on a
 
 The use case is that you might share your storybook with designers who don't want to see detailed implementation-oriented stories.
 
-### Follow-up
+### Open questions / followup
 
 - [ ] Presumably `test-only` stories should be filtered from the auto-generated docs
 - [ ] Should `dev-only` stories be dynamically filtered from the auto-generated docs based on the toggle?
