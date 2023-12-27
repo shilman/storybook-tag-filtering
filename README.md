@@ -16,9 +16,13 @@ It also contains a toolbar button with a "filter" icon that toggles stories on a
 
 The use case is that you might share your storybook with designers who don't want to see detailed implementation-oriented stories.
 
+### Autodocs filtering
+
+It filters out `dev-only` and `test-only` stories from Autodocs. It also excludes stories with a truthy `docs.disable` parameter, which is the default filter behavior.
+
 ### Open questions / followup
 
-- [ ] Presumably `test-only` stories should be filtered from the auto-generated docs
+- [x] Presumably `test-only` stories should be filtered from the auto-generated docs
 - [ ] Should `dev-only` stories be dynamically filtered from the auto-generated docs based on the toggle?
 - [ ] Should we build some of this into SB out of the box so users get it for free & there is a single consistent tag naming strategy, rather than letting users come up with their own?
 - [ ] When we filter a story dynamically and you are currently viewing the story, what should the behavior be?
