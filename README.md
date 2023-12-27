@@ -2,7 +2,7 @@
 
 This is a simple proof of concept to test the sidebar filtering functionality available in SB 7.x.
 
-[👉 View the Storybook](https://65544292ab81956447e652ce-arpzvagweh.chromatic.com/?path=/docs/example-button--docs)
+[👉 View the Storybook](https://65544292ab81956447e652ce-yxonsiqxck.chromatic.com/?path=/docs/example-button--docs)
 
 ### Static filtering
 
