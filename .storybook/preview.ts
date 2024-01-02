@@ -11,10 +11,14 @@ const preview: Preview = {
       },
     },
     docs: {
-      autodocsFilter: (story) => {
+      autodocsFilter: (story, context) => {
+        const exclude = new Set(excludeTags);
+        if (context.globals.designView) {
+          exclude.add('implementation');
+        }
         const tags = story.tags || [];
         return (
-          tags.filter((tag) => excludeTags.has(tag)).length === 0 && !story.parameters.docs?.disable
+          tags.filter((tag) => exclude.has(tag)).length === 0 && !story.parameters.docs?.disable
         );
       },
     },

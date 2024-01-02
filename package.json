@@ -17,13 +17,13 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "0.0.0-pr-25328-sha-e894c0b3",
-    "@storybook/addon-interactions": "0.0.0-pr-25328-sha-e894c0b3",
-    "@storybook/addon-links": "0.0.0-pr-25328-sha-e894c0b3",
+    "@storybook/addon-essentials": "0.0.0-pr-25328-sha-685b825e",
+    "@storybook/addon-interactions": "0.0.0-pr-25328-sha-685b825e",
+    "@storybook/addon-links": "0.0.0-pr-25328-sha-685b825e",
     "@storybook/addon-onboarding": "^1.0.8",
-    "@storybook/blocks": "0.0.0-pr-25328-sha-e894c0b3",
-    "@storybook/react": "0.0.0-pr-25328-sha-e894c0b3",
-    "@storybook/react-vite": "0.0.0-pr-25328-sha-e894c0b3",
+    "@storybook/blocks": "0.0.0-pr-25328-sha-685b825e",
+    "@storybook/react": "0.0.0-pr-25328-sha-685b825e",
+    "@storybook/react-vite": "0.0.0-pr-25328-sha-685b825e",
     "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
@@ -34,7 +34,7 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "storybook": "0.0.0-pr-25328-sha-e894c0b3",
+    "storybook": "0.0.0-pr-25328-sha-685b825e",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
