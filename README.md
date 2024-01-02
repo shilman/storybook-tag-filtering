@@ -12,20 +12,19 @@ The use case is that some stories only exist for the auto-generated docs, or in 
 
 ### Dynamic filtering
 
-It also contains a toolbar button with a "filter" icon that toggles stories on and off depends on whether they have the `dev-only` tag  (The `DevOnly1` and `DevOnly2` stories)
+It also contains a toolbar button with a "filter" icon that toggles stories on and off depends on whether they have the `implementation` tag  (The `Implementation1` and `Implementation2` stories)
 
 The use case is that you might share your storybook with designers who don't want to see detailed implementation-oriented stories.
 
+This would not be enabled by default but would be user-configurable.
+
 ### Autodocs filtering
 
-It filters out `dev-only` and `test-only` stories from Autodocs. It also excludes stories with a truthy `docs.disable` parameter, which is the default filter behavior.
+It filters out `test-only` stories from Autodocs. It also excludes stories with a truthy `docs.disable` parameter, which is the default filter behavior.
 
 ### Open questions / followup
 
-- [x] Presumably `test-only` stories should be filtered from the auto-generated docs
-- [ ] Should `dev-only` stories be dynamically filtered from the auto-generated docs based on the toggle?
-- [ ] Should we build some of this into SB out of the box so users get it for free & there is a single consistent tag naming strategy, rather than letting users come up with their own?
-- [ ] When we filter a story dynamically and you are currently viewing the story, what should the behavior be?
+- [ ] We need to make `globals` available in the DocsContext to enable dynamic filtering of `implementation` stories on the Autodocs page
 
 ### Install and run
 

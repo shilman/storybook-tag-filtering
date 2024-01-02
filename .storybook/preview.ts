@@ -19,6 +19,20 @@ const preview: Preview = {
       },
     },
   },
+  globalTypes: {
+    designView: {
+      description: 'Design view',
+      defaultValue: false,
+      // FIXME
+      // toolbar: {
+      //   icon: 'filter',
+      //   items: [
+      //     { value: true, title: 'Designer view' },
+      //     { value: false, title: 'Developer view' },
+      //   ],
+      // },
+    },
+  },
 };
 
 export default preview;
