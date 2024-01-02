@@ -20,6 +20,7 @@ addons.register(STATIC_FILTER, (api) => {
 });
 
 const DYNAMIC_FILTER = "dynamic-filter";
+const DYNAMIC_FILTER_BOTTOM = "dynamic-filter-bottom";
 
 const RoleTool: FC<{ api: API }> = ({ api }) => {
   const [globals, updateGlobals] = useGlobals();
@@ -27,6 +28,7 @@ const RoleTool: FC<{ api: API }> = ({ api }) => {
 
   // avoid infinite loop
   useEffect(() => {
+    console.log('useEffect')
     const designFilter = (item) => !!item.tags?.includes('docs') || !item.tags?.includes('implementation');
     const filter = designView ? designFilter : () => true;
     api.experimental_setFilter(DYNAMIC_FILTER, filter)
@@ -39,15 +41,14 @@ const RoleTool: FC<{ api: API }> = ({ api }) => {
       title="Toggle design view"
       onClick={() => updateGlobals({ designView: !designView })}
     >
-      <Icons icon="filter" />
+      <Icons icon="filter" /> Design-only view
     </IconButton>
   );
 }
 
 addons.register(DYNAMIC_FILTER, (api) => {
-  addons.add(DYNAMIC_FILTER, {
-    title: 'role-based filter',
-    type: types.TOOL,
+  addons.add(DYNAMIC_FILTER_BOTTOM, {
+    type: types.experimental_SIDEBAR_BOTTOM,
     render: () => <RoleTool api={api} />
   })
 });
