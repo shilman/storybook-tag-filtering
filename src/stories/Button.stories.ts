@@ -30,12 +30,12 @@ export const Normal: Story = {
   args: { label: 'Button (normal)' },
 };
 
-export const DevOnly1: Story = {
-  args: { label: 'Button1 (dev-only)' },
-  tags: ['dev-only'],
+export const Implementation1: Story = {
+  args: { label: 'Button1 (implementation)' },
+  tags: ['implementation'],
 };
 
-export const DevOnly2: Story = {
-  args: { label: 'Button2 (dev-only)' },
-  tags: ['dev-only'],
+export const Implementation2: Story = {
+  args: { label: 'Button2 (implementation)' },
+  tags: ['implementation'],
 };

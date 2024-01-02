@@ -2,7 +2,7 @@
 
 This is a simple proof of concept to test the sidebar filtering functionality available in SB 7.x.
 
-[👉 View the Storybook](https://65544292ab81956447e652ce-arpzvagweh.chromatic.com/?path=/docs/example-button--docs)
+[👉 View the Storybook](https://65544292ab81956447e652ce-nqpcixvvdp.chromatic.com/?path=/docs/example-button--docs)
 
 ### Static filtering
 
@@ -12,16 +12,13 @@ The use case is that some stories only exist for the auto-generated docs, or in 
 
 ### Dynamic filtering
 
-It also contains a toolbar button with a "filter" icon that toggles stories on and off depends on whether they have the `dev-only` tag  (The `DevOnly1` and `DevOnly2` stories)
+It also contains a toolbar button with a "filter" icon that toggles stories on and off depends on whether they have the `implementation` tag  (The `Implementation1` and `Implementation2` stories)
 
-The use case is that you might share your storybook with designers who don't want to see detailed implementation-oriented stories.
+The use case is that you might share your storybook with designers who don't want to see detailed implementation-oriented stories. This would not be enabled by default but would be user-configurable.
 
-### Open questions / followup
+### Autodocs filtering
 
-- [ ] Presumably `test-only` stories should be filtered from the auto-generated docs
-- [ ] Should `dev-only` stories be dynamically filtered from the auto-generated docs based on the toggle?
-- [ ] Should we build some of this into SB out of the box so users get it for free & there is a single consistent tag naming strategy, rather than letting users come up with their own?
-- [ ] When we filter a story dynamically and you are currently viewing the story, what should the behavior be?
+It filters out `test-only` stories from Autodocs. It also excludes stories with a truthy `docs.disable` parameter, which is the default filter behavior.
 
 ### Install and run
 
